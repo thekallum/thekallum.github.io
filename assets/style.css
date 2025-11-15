@@ -265,3 +265,22 @@ footer { background: #111827; color: #f9fafb; text-align: center; padding: 2rem 
   .section-title { font-size: 1.6rem; margin-bottom: 2rem; }
   section { padding: 48px 0; }
 }
+
+/* Adicione isso ao final do seu arquivo assets/style.css */
+
+.skill-items {
+    display: grid;
+    /* Isso força a criação de 3 colunas de largura igual */
+    grid-template-columns: repeat(3, 1fr);
+    
+    /* Isso centraliza cada item dentro da sua coluna */
+    justify-items: center;
+
+    /* Você pode ajustar o 'gap' (espaçamento) se o padrão não ficar bom */
+    gap: 0.5rem; 
+}
+
+.skill-item {
+    /* Garante que o ícone e o texto não quebrem linha internamente */
+    white-space: nowrap;
+}
