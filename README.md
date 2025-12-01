@@ -1,6 +1,6 @@
-# 🧑‍💻 thekallum.github.io
-
 <div align="center">
+
+# 🧑‍💻 thekallum.github.io
 
 ![Status](https://img.shields.io/badge/Status-Online-brightgreen?style=for-the-badge)
 ![Code Quality](https://img.shields.io/badge/Quality-Alto-blue?style=for-the-badge)
