@@ -67,7 +67,7 @@ async function fetchGitHubProjects() {
     const container = document.getElementById('projects-container');
 
     // Nomes dos repositórios que você deseja ESCONDER do site
-    const blacklist = ['thekallum', 'repositorio-teste']; 
+    const blacklist = ['thekallum', 'github-stats-transparent']; 
 
     try {
         // Busca os repositórios ordenados por data de atualização (mais recentes primeiro)
