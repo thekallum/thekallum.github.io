@@ -67,7 +67,7 @@ async function fetchGitHubProjects() {
     const container = document.getElementById('projects-container');
 
     // Nomes dos repositórios que você deseja ESCONDER do site
-    const blacklist = ['thekallum', 'thekallum/github-stats-transparent']; 
+    const blacklist = ['thekallum', 'github-stats-transparent']; 
 
     try {
         // Busca os repositórios ordenados por data de atualização (mais recentes primeiro)
@@ -82,7 +82,7 @@ async function fetchGitHubProjects() {
         // Filtra os repositórios (remove os que estão na blacklist)
         const projects = data.filter(repo => {
             // Se quiser esconder forks (projetos que você copiou), descomente a linha abaixo:
-            // if (repo.fork) return false;
+            if (repo.fork) return false;
             
             return !blacklist.includes(repo.name);
         });
